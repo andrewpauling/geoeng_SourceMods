@@ -3399,12 +3399,12 @@ subroutine hose_ice(hsn,    hin,      &
 
     snoice = c0
 
-    HOSE = 0.0
+    HOSE = 1.2/(365.0*24.0)
 
        
     if (HOSE /= 0.0) then
 
-       if (month > 7 .and. month < 10) then
+       if (month > 8 .and. month < 11) then
 
        ! check we have snow
        if (hsn > puny) then
